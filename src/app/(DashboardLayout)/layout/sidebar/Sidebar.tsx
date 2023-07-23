@@ -1,7 +1,6 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
 import Logo from "../shared/logo/Logo";
 import SidebarItems from "./SidebarItems";
-import { Upgrade } from "./Updrade";
 
 interface ItemType {
   isMobileSidebarOpen: boolean;
@@ -26,13 +25,10 @@ const Sidebar = ({
           flexShrink: 0,
         }}
       >
-        {/* ------------------------------------------- */}
-        {/* Sidebar for desktop */}
-        {/* ------------------------------------------- */}
         <Drawer
-          anchor="left"
+          anchor='left'
           open={isSidebarOpen}
-          variant="permanent"
+          variant='permanent'
           PaperProps={{
             sx: {
               width: sidebarWidth,
@@ -40,26 +36,16 @@ const Sidebar = ({
             },
           }}
         >
-          {/* ------------------------------------------- */}
-          {/* Sidebar Box */}
-          {/* ------------------------------------------- */}
           <Box
             sx={{
               height: "100%",
             }}
           >
-            {/* ------------------------------------------- */}
-            {/* Logo */}
-            {/* ------------------------------------------- */}
             <Box px={3}>
               <Logo />
             </Box>
             <Box>
-              {/* ------------------------------------------- */}
-              {/* Sidebar Items */}
-              {/* ------------------------------------------- */}
               <SidebarItems />
-              <Upgrade />
             </Box>
           </Box>
         </Drawer>
@@ -69,28 +55,21 @@ const Sidebar = ({
 
   return (
     <Drawer
-      anchor="left"
+      anchor='left'
       open={isMobileSidebarOpen}
       onClose={onSidebarClose}
-      variant="temporary"
+      variant='temporary'
       PaperProps={{
         sx: {
           width: sidebarWidth,
-          boxShadow: (theme) => theme.shadows[8],
+          boxShadow: theme => theme.shadows[8],
         },
       }}
     >
-      {/* ------------------------------------------- */}
-      {/* Logo */}
-      {/* ------------------------------------------- */}
       <Box px={2}>
         <Logo />
       </Box>
-      {/* ------------------------------------------- */}
-      {/* Sidebar For Mobile */}
-      {/* ------------------------------------------- */}
       <SidebarItems />
-      <Upgrade />
     </Drawer>
   );
 };

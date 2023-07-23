@@ -15,7 +15,12 @@ const Menuitems = [
     navlabel: true,
     subheader: "Home",
   },
-
+  {
+    id: uniqueId(),
+    title: "Why Awzy!",
+    icon: IconLayoutDashboard,
+    href: "/whyAwzy",
+  },
   {
     id: uniqueId(),
     title: "Dashboard",
@@ -69,6 +74,12 @@ const Menuitems = [
     title: "Sample Page",
     icon: IconAperture,
     href: "/sample-page",
+  },
+  {
+    id: uniqueId(),
+    title: "Author",
+    icon: IconAperture,
+    href: "/author",
   },
 ];
 

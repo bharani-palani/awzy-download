@@ -1,5 +1,4 @@
-
-import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import DashboardCard from "@/app/(DashboardLayout)/components/shared/DashboardCard";
 import {
   Timeline,
   TimelineItem,
@@ -9,24 +8,24 @@ import {
   TimelineConnector,
   TimelineContent,
   timelineOppositeContentClasses,
-} from '@mui/lab';
-import { Link, Typography } from '@mui/material';
+} from "@mui/lab";
+import { Link, Typography } from "@mui/material";
 
 const RecentTransactions = () => {
   return (
-    <DashboardCard title="Recent Transactions">
+    <DashboardCard title='Steps to follow after download'>
       <>
         <Timeline
-          className="theme-timeline"
+          className='theme-timeline'
           nonce={undefined}
           onResize={undefined}
           onResizeCapture={undefined}
           sx={{
             p: 0,
-            mb: '-40px',
-            '& .MuiTimelineConnector-root': {
-              width: '1px',
-              backgroundColor: '#efefef'
+            mb: "-40px",
+            "& .MuiTimelineConnector-root": {
+              width: "1px",
+              backgroundColor: "#efefef",
             },
             [`& .${timelineOppositeContentClasses.root}`]: {
               flex: 0.5,
@@ -37,20 +36,22 @@ const RecentTransactions = () => {
           <TimelineItem>
             <TimelineOppositeContent>09:30 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="primary" variant="outlined" />
+              <TimelineDot color='primary' variant='outlined' />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>Payment received from John Doe of $385.90</TimelineContent>
+            <TimelineContent>
+              Payment received from John Doe of $385.90
+            </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent>10:00 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="secondary" variant="outlined" />
+              <TimelineDot color='secondary' variant='outlined' />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New sale recorded</Typography>{' '}
-              <Link href="/" underline="none">
+              <Typography fontWeight='600'>New sale recorded</Typography>{" "}
+              <Link href='/' underline='none'>
                 #ML-3467
               </Link>
             </TimelineContent>
@@ -58,20 +59,22 @@ const RecentTransactions = () => {
           <TimelineItem>
             <TimelineOppositeContent>12:00 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="success" variant="outlined" />
+              <TimelineDot color='success' variant='outlined' />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>Payment was made of $64.95 to Michael</TimelineContent>
+            <TimelineContent>
+              Payment was made of $64.95 to Michael
+            </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent>09:30 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="warning" variant="outlined" />
+              <TimelineDot color='warning' variant='outlined' />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New sale recorded</Typography>{' '}
-              <Link href="/" underline="none">
+              <Typography fontWeight='600'>New sale recorded</Typography>{" "}
+              <Link href='/' underline='none'>
                 #ML-3467
               </Link>
             </TimelineContent>
@@ -79,17 +82,17 @@ const RecentTransactions = () => {
           <TimelineItem>
             <TimelineOppositeContent>09:30 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="error" variant="outlined" />
+              <TimelineDot color='error' variant='outlined' />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Typography fontWeight="600">New arrival recorded</Typography>
+              <Typography fontWeight='600'>New arrival recorded</Typography>
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent>12:00 am</TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineDot color="success" variant="outlined" />
+              <TimelineDot color='success' variant='outlined' />
             </TimelineSeparator>
             <TimelineContent>Payment Received</TimelineContent>
           </TimelineItem>

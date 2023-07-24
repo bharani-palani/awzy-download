@@ -9,7 +9,6 @@ import {
   IconBellQuestion,
   IconStepInto,
   IconUserCode,
-  IconCloudDownload,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -35,13 +34,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Steps to follow",
     icon: IconStepInto,
-    href: "/steps-to-follow",
-  },
-  {
-    id: uniqueId(),
-    title: "Download",
-    icon: IconCloudDownload,
-    href: "/download",
+    href: "/stepsToFollow",
   },
   {
     navlabel: true,
@@ -58,6 +51,22 @@ const Menuitems = [
     title: "Shadow",
     icon: IconCopy,
     href: "/utilities/shadow",
+  },
+  {
+    navlabel: true,
+    subheader: "Auth",
+  },
+  {
+    id: uniqueId(),
+    title: "Login",
+    icon: IconLogin,
+    href: "/authentication/login",
+  },
+  {
+    id: uniqueId(),
+    title: "Register",
+    icon: IconUserPlus,
+    href: "/authentication/register",
   },
   {
     navlabel: true,

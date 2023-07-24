@@ -6,6 +6,9 @@ import {
   IconMoodHappy,
   IconTypography,
   IconUserPlus,
+  IconBellQuestion,
+  IconStepInto,
+  IconUserCode,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -18,7 +21,7 @@ const Menuitems = [
   {
     id: uniqueId(),
     title: "Why Awzy!",
-    icon: IconLayoutDashboard,
+    icon: IconBellQuestion,
     href: "/whyAwzy",
   },
   {
@@ -26,6 +29,12 @@ const Menuitems = [
     title: "Dashboard",
     icon: IconLayoutDashboard,
     href: "/",
+  },
+  {
+    id: uniqueId(),
+    title: "Steps to follow",
+    icon: IconStepInto,
+    href: "/stepsToFollow",
   },
   {
     navlabel: true,
@@ -71,14 +80,8 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: "Sample Page",
-    icon: IconAperture,
-    href: "/sample-page",
-  },
-  {
-    id: uniqueId(),
     title: "Author",
-    icon: IconAperture,
+    icon: IconUserCode,
     href: "/author",
   },
 ];

@@ -1,12 +1,12 @@
 "use client";
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
 
-const SamplePage = () => {
+const WhyAwzy = () => {
   return (
-    <PageContainer title='Sample Page' description='this is Sample page'>
+    <PageContainer title='WhyAwzy Page' description='this is WhyAwzy page'>
       <div>Why awzy</div>
     </PageContainer>
   );
 };
 
-export default SamplePage;
+export default WhyAwzy;

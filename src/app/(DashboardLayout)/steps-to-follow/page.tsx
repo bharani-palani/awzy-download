@@ -2,12 +2,12 @@
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
 import RecentTransactions from "@/app/(DashboardLayout)/components/dashboard/RecentTransactions";
 
-const SamplePage = () => {
+const Steps = () => {
   return (
-    <PageContainer title='Sample Page' description='this is Sample page'>
+    <PageContainer title='Steps Page' description='this is Steps page'>
       <RecentTransactions />
     </PageContainer>
   );
 };
 
-export default SamplePage;
+export default Steps;

@@ -87,12 +87,8 @@ const SalesOverview = () => {
   };
   const seriescolumnchart: any = [
     {
-      name: "Eanings this month",
+      name: "Downloads this month",
       data: [355, 390, 300, 350, 390, 180, 355, 390],
-    },
-    {
-      name: "Expense this month",
-      data: [280, 250, 325, 215, 250, 310, 280, 250],
     },
   ];
 

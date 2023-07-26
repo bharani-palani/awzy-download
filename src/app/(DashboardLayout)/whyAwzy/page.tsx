@@ -1,10 +1,19 @@
 "use client";
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
+import { Typography, Grid, CardContent, Button } from "@mui/material";
+import BlankCard from "@/app/(DashboardLayout)/components/shared/BlankCard";
 
 const WhyAwzy = () => {
   return (
-    <PageContainer title='WhyAwzy Page' description='this is WhyAwzy page'>
-      <div>Why awzy</div>
+    <PageContainer title='Author Page' description='this is Author page'>
+      <BlankCard>
+        <CardContent>
+          <Typography variant='h3'>Why Awzy</Typography>
+          <Typography variant='subtitle2' fontWeight='600'>
+            Responsiveness ready for all devices
+          </Typography>
+        </CardContent>
+      </BlankCard>
     </PageContainer>
   );
 };

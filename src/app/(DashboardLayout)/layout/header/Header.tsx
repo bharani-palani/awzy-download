@@ -62,7 +62,7 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
             disableElevation
             color='primary'
             target='_blank'
-            href='https://adminmart.com/product/modernize-next-js-admin-dashboard'
+            href='https://github.com/bharani-palani/bni-cms'
           >
             Download Awzy
           </Button>

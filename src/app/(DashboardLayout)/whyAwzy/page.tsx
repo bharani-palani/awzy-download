@@ -9,7 +9,7 @@ const WhyAwzy = () => {
       <BlankCard>
         <CardContent>
           <Typography variant='h3'>Why Awzy</Typography>
-          <Typography variant='subtitle2' fontWeight='600'>
+          <Typography variant='subtitle2' fontWeight='100'>
             Responsiveness ready for all devices
           </Typography>
         </CardContent>

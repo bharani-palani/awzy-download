@@ -16,13 +16,7 @@ import { uniqueId } from "lodash";
 const Menuitems = [
   {
     navlabel: true,
-    subheader: "Home",
-  },
-  {
-    id: uniqueId(),
-    title: "Why Awzy!",
-    icon: IconBellQuestion,
-    href: "/whyAwzy",
+    subheader: "Links",
   },
   {
     id: uniqueId(),
@@ -32,13 +26,19 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
+    title: "Why Awzy!",
+    icon: IconBellQuestion,
+    href: "/whyAwzy",
+  },
+  {
+    id: uniqueId(),
     title: "Steps to follow",
     icon: IconStepInto,
     href: "/steps-to-follow",
   },
   {
     navlabel: true,
-    subheader: "Support",
+    subheader: "Developer",
   },
   {
     id: uniqueId(),

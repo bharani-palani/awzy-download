@@ -1,14 +1,21 @@
 "use client";
 import PageContainer from "@/app/(DashboardLayout)/components/container/PageContainer";
-import { Typography, Grid, CardContent, Button } from "@mui/material";
+import { Typography, Divider, CardContent, Button } from "@mui/material";
 import BlankCard from "@/app/(DashboardLayout)/components/shared/BlankCard";
 
 const Author = () => {
   return (
-    <PageContainer title='Author Page' description='this is Author page'>
+    <PageContainer
+      title='Awzy Author'
+      description='The details of Author of Awzy'
+    >
       <BlankCard>
         <CardContent>
           <Typography variant='h3'>Bharani Palani</Typography>
+        </CardContent>
+        <Divider />
+        <CardContent>
+          <Typography variant='h5'>Web</Typography>
           <Button
             color='primary'
             target='_blank'
@@ -18,9 +25,9 @@ const Author = () => {
             https://bharani.tech
           </Button>
         </CardContent>
-
+        <Divider />
         <CardContent>
-          <Typography variant='h4'>Email</Typography>
+          <Typography variant='h5'>Email</Typography>
           <Button
             color='primary'
             target='_blank'

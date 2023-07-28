@@ -8,7 +8,10 @@ import MonthlyEarnings from "@/app/(DashboardLayout)/components/dashboard/Monthl
 
 const Dashboard = () => {
   return (
-    <PageContainer title='Dashboard' description='this is Dashboard'>
+    <PageContainer
+      title='Awzy dashboard'
+      description='Dashboard showing download metrics of Awzy'
+    >
       <Box>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={8}>

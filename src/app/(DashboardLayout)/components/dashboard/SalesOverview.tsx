@@ -6,12 +6,21 @@ import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const SalesOverview = () => {
-  // select
-  const [month, setMonth] = React.useState("1");
-
-  const handleChange = (event: any) => {
-    setMonth(event.target.value);
-  };
+  const [min, max, year] = [200, 500, new Date().getFullYear()];
+  const categories = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
   // chart color
   const theme = useTheme();
@@ -66,16 +75,7 @@ const SalesOverview = () => {
       tickAmount: 4,
     },
     xaxis: {
-      categories: [
-        "16/08",
-        "17/08",
-        "18/08",
-        "19/08",
-        "20/08",
-        "21/08",
-        "22/08",
-        "23/08",
-      ],
+      categories,
       axisBorder: {
         show: false,
       },
@@ -88,27 +88,14 @@ const SalesOverview = () => {
   const seriescolumnchart: any = [
     {
       name: "Downloads this month",
-      data: [355, 390, 300, 350, 390, 180, 355, 390],
+      data: new Array(12)
+        .fill("")
+        .map(m => Math.floor(Math.random() * (max - min + 1) + min)),
     },
   ];
 
   return (
-    <DashboardCard
-      title='Downloads this year'
-      action={
-        <Select
-          labelId='month-dd'
-          id='month-dd'
-          value={month}
-          size='small'
-          onChange={handleChange}
-        >
-          <MenuItem value={1}>March 2023</MenuItem>
-          <MenuItem value={2}>April 2023</MenuItem>
-          <MenuItem value={3}>May 2023</MenuItem>
-        </Select>
-      }
-    >
+    <DashboardCard title='Downloads this year'>
       <Chart
         options={optionscolumnchart}
         series={seriescolumnchart}

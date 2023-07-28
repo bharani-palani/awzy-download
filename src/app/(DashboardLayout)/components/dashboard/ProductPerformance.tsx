@@ -7,45 +7,46 @@ import {
   TableHead,
   TableRow,
   Chip,
+  Rating,
 } from "@mui/material";
 import DashboardCard from "@/app/(DashboardLayout)//components/shared/DashboardCard";
 
 const products = [
   {
     id: "1",
-    name: "Sunil Joshi",
+    name: "Pavithra Premkumar",
     post: "Web Designer",
-    pname: "Elite Admin",
+    pname: "Manju groups",
     priority: "Low",
     pbg: "primary.main",
-    budget: "3.9",
+    budget: <Rating value={4} />,
   },
   {
     id: "2",
-    name: "Andrew McDownland",
-    post: "Project Manager",
-    pname: "Real Homes WP Theme",
+    name: "Srinivas Ramakrishnan",
+    post: "Solution Architect",
+    pname: "Genesys systems",
     priority: "Medium",
     pbg: "secondary.main",
-    budget: "24.5",
+    budget: <Rating value={4} />,
   },
   {
     id: "3",
-    name: "Christopher Jamil",
-    post: "Project Manager",
-    pname: "MedicalPro WP Theme",
+    name: "Suresh Dhanapal",
+    post: "Project manager",
+    pname: "Photon Interactive",
     priority: "High",
-    pbg: "error.main",
-    budget: "12.8",
+    pbg: "success.main",
+    budget: <Rating value={5} />,
   },
   {
     id: "4",
-    name: "Nirav Joshi",
+    name: "Muralikrishna Srinivasan",
     post: "Frontend Engineer",
-    pname: "Hosting Press HTML",
-    priority: "Critical",
+    pname: "RBS",
+    priority: "High",
     pbg: "success.main",
-    budget: "2.4",
+    budget: <Rating value={5} />,
   },
 ];
 
@@ -64,27 +65,27 @@ const ProductPerformance = () => {
             <TableRow>
               <TableCell>
                 <Typography variant='subtitle2' fontWeight={600}>
-                  Id
+                  #
                 </Typography>
               </TableCell>
               <TableCell>
                 <Typography variant='subtitle2' fontWeight={600}>
-                  Assigned
+                  Name / Role
                 </Typography>
               </TableCell>
               <TableCell>
                 <Typography variant='subtitle2' fontWeight={600}>
-                  Name
+                  Company
                 </Typography>
               </TableCell>
               <TableCell>
                 <Typography variant='subtitle2' fontWeight={600}>
-                  Priority
+                  CMS Usage
                 </Typography>
               </TableCell>
               <TableCell align='right'>
                 <Typography variant='subtitle2' fontWeight={600}>
-                  Budget
+                  Rating
                 </Typography>
               </TableCell>
             </TableRow>
@@ -145,7 +146,7 @@ const ProductPerformance = () => {
                   ></Chip>
                 </TableCell>
                 <TableCell align='right'>
-                  <Typography variant='h6'>${product.budget}k</Typography>
+                  <Typography variant='h6'>{product.budget}</Typography>
                 </TableCell>
               </TableRow>
             ))}

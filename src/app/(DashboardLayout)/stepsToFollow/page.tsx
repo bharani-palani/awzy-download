@@ -4,7 +4,10 @@ import RecentTransactions from "@/app/(DashboardLayout)/components/dashboard/Rec
 
 const Steps = () => {
   return (
-    <PageContainer title='Steps Page' description='this is Steps page'>
+    <PageContainer
+      title='Steps to follow after download'
+      description='Describes the steps to install & configure Awzy in your development machine'
+    >
       <RecentTransactions />
     </PageContainer>
   );

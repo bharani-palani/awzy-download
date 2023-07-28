@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import PropTypes from "prop-types";
 import { IconBellRinging, IconMenu } from "@tabler/icons-react";
+import DownloadIcon from "@mui/icons-material/Download";
 
 interface ItemType {
   toggleMobileSidebar: (event: React.MouseEvent<HTMLElement>) => void;
@@ -63,6 +64,7 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
             color='primary'
             target='_blank'
             href='https://github.com/bharani-palani/bni-cms'
+            startIcon={<DownloadIcon />}
           >
             Download Awzy
           </Button>
